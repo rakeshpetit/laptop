@@ -209,6 +209,10 @@ bundle config --global jobs $((number_of_cores - 1))
 fancy_echo "Installing latest Node ..."
 install_asdf_language "nodejs"
 
+## Clone custom zsh plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
 if [ -f "$HOME/.laptop.local" ]; then
   fancy_echo "Running your customizations from ~/.laptop.local ..."
   # shellcheck disable=SC1091
