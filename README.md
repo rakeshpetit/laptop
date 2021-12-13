@@ -1,5 +1,4 @@
-Laptop
-======
+# Laptop
 
 Laptop is a script to set up a macOS laptop for web and mobile development.
 
@@ -7,26 +6,24 @@ It can be run multiple times on the same machine safely.
 It installs, upgrades, or skips packages
 based on what is already installed on the machine.
 
-Requirements
-------------
+## Requirements
 
 We support:
 
-* macOS Sequoia (15.x) on Apple Silicon and Intel
-* macOS Sonoma (14.x) on Apple Silicon and Intel
-* macOS Ventura (13.x) on Apple Silicon and Intel
-* macOS Monterey (12.x) on Apple Silicon and Intel
+- macOS Sequoia (15.x) on Apple Silicon and Intel
+- macOS Sonoma (14.x) on Apple Silicon and Intel
+- macOS Ventura (13.x) on Apple Silicon and Intel
+- macOS Monterey (12.x) on Apple Silicon and Intel
 
 Older versions may work but aren't regularly tested.
 Bug reports for older versions are welcome.
 
-Install
--------
+## Install
 
 Download the script:
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/main/mac
+curl --remote-name https://raw.githubusercontent.com/rakeshpetit/laptop/main/mac
 ```
 
 Review the script (avoid running scripts you haven't read!):
@@ -51,8 +48,7 @@ Optionally, [install thoughtbot/dotfiles][dotfiles].
 
 [dotfiles]: https://github.com/thoughtbot/dotfiles#install
 
-Debugging
----------
+## Debugging
 
 Your last Laptop run will be saved to `~/laptop.log`.
 Read through it to see if you can debug the issue yourself.
@@ -60,26 +56,25 @@ If not, copy the lines where the script failed into a
 [new GitHub Issue](https://github.com/thoughtbot/laptop/issues/new) for us.
 Or, attach the whole log file as an attachment.
 
-What it sets up
----------------
+## What it sets up
 
 macOS tools:
 
-* [Homebrew] for managing operating system libraries.
+- [Homebrew] for managing operating system libraries.
 
 [Homebrew]: http://brew.sh/
 
 Unix tools:
 
-* [fzf][] for better command history searching
-* [Universal Ctags] for indexing files for vim tab completion
-* [Git] for version control
-* [OpenSSL] for Transport Layer Security (TLS)
-* [RCM] for managing company and personal dotfiles
-* [The Silver Searcher] for finding things in files
-* [Tmux] for saving project state and switching between projects
-* [Watchman] for watching for filesystem events
-* [Zsh] as your shell
+- [fzf][] for better command history searching
+- [Universal Ctags] for indexing files for vim tab completion
+- [Git] for version control
+- [OpenSSL] for Transport Layer Security (TLS)
+- [RCM] for managing company and personal dotfiles
+- [The Silver Searcher] for finding things in files
+- [Tmux] for saving project state and switching between projects
+- [Watchman] for watching for filesystem events
+- [Zsh] as your shell
 
 [fzf]: https://github.com/junegunn/fzf
 [Universal Ctags]: https://ctags.io/
@@ -93,29 +88,29 @@ Unix tools:
 
 Heroku tools:
 
-* [Heroku CLI] and [Parity] for interacting with the Heroku API
+- [Heroku CLI] and [Parity] for interacting with the Heroku API
 
 [Heroku CLI]: https://devcenter.heroku.com/articles/heroku-cli
 [Parity]: https://github.com/thoughtbot/parity
 
 GitHub tools:
 
-* [GitHub CLI] for interacting with the GitHub API
+- [GitHub CLI] for interacting with the GitHub API
 
 [GitHub CLI]: https://cli.github.com/
 
 Image tools:
 
-* [ImageMagick] for cropping and resizing images
+- [ImageMagick] for cropping and resizing images
 
 Programming languages, package managers, and configuration:
 
-* [asdf-vm] for managing programming language versions
-* [Bundler] for managing Ruby libraries
-* [Node.js] and [npm], for running apps and installing JavaScript packages
-* [Ruby] stable for writing general-purpose code
-* [Yarn] for managing JavaScript packages
-* [Rosetta 2] for running tools that are not supported in Apple silicon processors
+- [asdf-vm] for managing programming language versions
+- [Bundler] for managing Ruby libraries
+- [Node.js] and [npm], for running apps and installing JavaScript packages
+- [Ruby] stable for writing general-purpose code
+- [Yarn] for managing JavaScript packages
+- [Rosetta 2] for running tools that are not supported in Apple silicon processors
 
 [Bundler]: http://bundler.io/
 [ImageMagick]: http://www.imagemagick.org/
@@ -128,16 +123,15 @@ Programming languages, package managers, and configuration:
 
 Databases:
 
-* [Postgres] for storing relational data
-* [Redis] for storing key-value data
+- [Postgres] for storing relational data
+- [Redis] for storing key-value data
 
 [Postgres]: http://www.postgresql.org/
 [Redis]: http://redis.io/
 
 It should take less than 15 minutes to install (depends on your machine).
 
-Customize in `~/.laptop.local`
-------------------------------
+## Customize in `~/.laptop.local`
 
 Your `~/.laptop.local` is run at the end of the Laptop script.
 Put your customizations there.
@@ -188,8 +182,7 @@ can be used in your `~/.laptop.local`.
 See the [wiki](https://github.com/thoughtbot/laptop/wiki)
 for more customization examples.
 
-Contributing
-------------
+## Contributing
 
 Thank you, [contributors]!
 
@@ -213,7 +206,6 @@ brew install shellcheck
 [Syntastic]: https://github.com/scrooloose/syntastic
 [ALE]: https://github.com/dense-analysis/ale
 
-
 ### Testing your changes
 
 Test your changes by running the script on a fresh install of macOS.
@@ -225,8 +217,7 @@ the script each time on a fresh install that's ready to go.
 
 [UTM]: https://mac.getutm.app
 
-License
--------
+## License
 
 Copyright © 2011 thoughtbot, inc.
 It is free software,
@@ -235,6 +226,7 @@ and may be redistributed under the terms specified in the [LICENSE] file.
 [LICENSE]: LICENSE
 
 <!-- START /templates/footer.md -->
+
 ## About thoughtbot
 
 ![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)
