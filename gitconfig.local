@@ -4,3 +4,5 @@
 	username = rakeshpetit
 [credential]
 	helper = store
+[core]
+	editor = "code -w"
