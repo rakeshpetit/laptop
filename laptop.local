@@ -3,6 +3,7 @@
 brew install --cask google-chrome
 brew install --cask visual-studio-code
 brew install --cask iterm2
+brew install --cask spectacle
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
