@@ -5,4 +5,3 @@
 ## Software
 
 - Install Xcode and command line tools
-- Install Obsidian
