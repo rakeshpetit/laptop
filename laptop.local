@@ -4,11 +4,17 @@ brew install --cask google-chrome
 brew install --cask visual-studio-code
 brew install --cask iterm2
 brew install --cask spectacle
-brew install --cask slack
+brew install --cask obsidian
+brew install --cask kap
 
-## React Native development
+# Communication
+brew install --cask slack
+brew install --cask tuple
+
+# React Native development
 brew install --cask react-native-debugger
 brew install --cask flipper
+
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
