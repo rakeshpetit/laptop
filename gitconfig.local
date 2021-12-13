@@ -1,0 +1,6 @@
+[user]
+	name = Rakesh Arunachalam
+	email = EMAIL
+	username = rakeshpetit
+[credential]
+	helper = store
