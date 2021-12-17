@@ -9,6 +9,9 @@ brew install --cask obsidian
 brew install --cask kap
 brew install --cask barrier
 
+# Cloud
+brew install awscli
+
 # Communication
 brew install --cask slack
 brew install --cask zoom
