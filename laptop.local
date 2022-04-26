@@ -23,6 +23,9 @@ brew install --cask react-native-debugger
 brew install --cask flipper
 brew install --cask android-studio
 
+# For formatting iOS Objective C code
+brew install clang-format
+
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
 
