@@ -1,8 +1,10 @@
 #!/bin/sh
 
 brew install --cask google-chrome
+brew install --cask brave-browser
 brew install --cask visual-studio-code
 brew install --cask iterm2
+brew install --cask alacritty
 brew install --cask spectacle
 brew install --cask postman
 brew install --cask obsidian
@@ -19,8 +21,7 @@ brew install --cask tuple
 brew install --cask whatsapp
 
 # React Native development
-brew install --cask react-native-debugger
-brew install --cask flipper
+brew install --cask reactotron
 brew install --cask android-studio
 
 # For formatting iOS Objective C code
