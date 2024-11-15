@@ -23,6 +23,9 @@ brew install --cask whatsapp
 # React Native development
 brew install --cask reactotron
 brew install --cask android-studio
+brew install android-platform-tools
+brew install scrcpy
+
 
 # For formatting iOS Objective C code
 brew install clang-format
