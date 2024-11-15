@@ -13,6 +13,7 @@ brew install --cask barrier
 
 # Cloud
 brew install awscli
+brew install 1password-cli
 
 # Communication
 brew install --cask slack
