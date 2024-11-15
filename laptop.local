@@ -38,3 +38,26 @@ if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
   rcup
 fi
+
+add_or_update_asdf_plugin() {
+  local name="$1"
+  local url="$2"
+
+  if ! asdf plugin-list | grep -Fq "$name"; then
+    asdf plugin-add "$name" "$url"
+  else
+    asdf plugin-update "$name"
+  fi
+}
+
+add_or_update_asdf_plugin "java" "https://github.com/halcyon/asdf-java.git"
+add_or_update_asdf_plugin "bun" "https://github.com/cometkim/asdf-bun.git"
+add_or_update_asdf_plugin "elixir" "https://github.com/asdf-vm/asdf-elixir.git"
+add_or_update_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
+add_or_update_asdf_plugin "golang" "https://github.com/asdf-community/asdf-golang.git"
+add_or_update_asdf_plugin "neovim" "https://github.com/richin13/asdf-neovim.git"
+add_or_update_asdf_plugin "pipx" "https://github.com/yozachar/asdf-pipx.git"
+add_or_update_asdf_plugin "poetry" "https://github.com/asdf-community/asdf-poetry.git"
+add_or_update_asdf_plugin "python" "https://github.com/asdf-community/asdf-python.git"
+add_or_update_asdf_plugin "rust" "https://github.com/code-lever/asdf-rust.git"
+add_or_update_asdf_plugin "yarn" "https://github.com/twuni/asdf-yarn.git"
