@@ -226,7 +226,6 @@ and may be redistributed under the terms specified in the [LICENSE] file.
 [LICENSE]: LICENSE
 
 <!-- START /templates/footer.md -->
-
 ## About thoughtbot
 
 ![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)
